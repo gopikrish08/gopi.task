@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+ .accordion:hover {
+  background-color: #ccc; 
+}
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+<h2>Accordion</h2>
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>The India Clive arrived in was divided into a number of successor states to the Mughal Empire. Over the forty years since the death of the Emperor Aurangzeb in 1707, the power of the emperor had gradually fallen into the hands of his provincial viceroys or Subahdars. The dominant rulers on the Coromandel Coast were the Nizam of Hyderabad, Asaf Jah I, and the Nawab of the Carnatic, Anwaruddin Muhammed Khan. The Nawab nominally owed fealty to the nizam, but in many respects acted independently. Fort St. George and the French trading post at Pondicherry were both located in the Nawab's territory.
+    The relationship between the Europeans in India was influenced by a series of wars and treaties in Europe, and by competing commercial rivalry for trade on the subcontinent. Through the 17th and early 18th centuries, the French, Dutch, Portuguese, and British had vied for control of various trading posts, and for trading rights and favour with local Indian rulers. The European merchant companies raised bodies of troops to protect their commercial interests and latterly to influence local politics to their advantage. Military power was rapidly becoming as important as commercial acumen in securing India's valuable trade, and increasingly it was used to appropriate territory and to collect land revenue. </p>
+</div>
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Science was not an established profession, and Babbage, like many of his contemporaries, was a 'gentleman scientist' - an independently wealthy amateur well able to support his interests from his own means. The scope of Babbage's interests was polymathically wide even by the generous standards of the day. Between 1813 and 1868 he published six full-length works and nearly ninety papers. He was a prolific inventor, mathematician, scientist, reforming critic of the scientific establishment and political economist. He pioneered lighthouse signalling, invented the ophthalmoscope, proposed 'black box' recorders for monitoring the conditions preceding railway catastrophes, advocated decimal currency, proposed the use of tidal power once coal reserves were exhausted, designed a cow-catcher for the front end of railway locomotives, failsafe quick release couplings for railway carriages, multi-colored theatre lighting, an altimeter, a seismic detector, a tugboat for winching vessels upstream, a 'hydrofoil' and an arcade game for members of the public to challenge in a game of tic-tac-toe. His interests included lock picking, ciphers, chess, submarine propulsion, armaments, and diving bells. Babbage was a prominent figure, regarded as colorfully controversial and even eccentric at home in England, yet feted with honors by Continental academies. He ached for recognition and was aggrieved at its lack grumbling that the Lucasian chair of mathematics at Cambridge, was the only honor bestowed on him by his country. </p>
+</div>
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Glenn James Maxwell (born 14 October 1988) is an Australian professional cricketer, who represents Australia national cricket team in One Day International and Twenty20 International formats of the game[3] and has played Test cricket for Australia. Maxwell is an all-rounder who bats right handed and bowl off break. He represents Victoria and Melbourne Stars in Australian domestic cricket.[4] Maxwell was a member of the Australian team that won the 2015 Cricket World Cup and the 2021 ICC T20 World Cup, where he scored the winning boundary to win the country's maiden T20 world title.His professional cricketing career was launched when he started playing for Victoria in the Twenty20 Big Bash in 2010.[5] Known for his dramatic shot making and improvisation in the short form of the game,[6] he scored 102 from 52 balls against Sri Lanka in the 2015 World Cup, the second fastest World Cup century to date.[7] He also scored an unbeaten 145* from 65 balls against Sri Lanka in 2016, the fourth highest score in Twenty20 Internationals.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

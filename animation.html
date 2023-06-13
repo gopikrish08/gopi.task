@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <style>
+            div.test1{width: 150px;height: 150px;
+            background-color: aqua;
+            position: relative;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;}
+            @keyframes example{
+            0%{background-color: blueviolet;left: 0px;top: 0px;}
+            25%{background-color: brown;left: 200px;top: 0px;}
+            50%{background-color: blueviolet; left: 200px;top: 200px;}
+            75%{background-color: cadetblue;left: 0px;top: 200px;}
+            100%{background-color: chocolate;left: 200px;top: 200px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="test1"></div>
+    </body>
+</html>

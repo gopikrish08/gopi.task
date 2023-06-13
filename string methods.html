@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <body>
+            <h1>string methods</h1>
+            <h2>string length</h2>
+            <p id="part1"></p>
+            <h2>string trim()</h2>
+            <p id="part2"></p>
+            <h2>string touppercase()</h2>
+            <p id="part3"></p>
+            <h2>string toLowerCase()</h2>
+            <p id="part4"></p>
+            <h2>string concat</h2>
+            <p id="part5"></p>
+            <script>
+                let text="tfkm mjins Asdjf fjd";
+                document.getElementById("part1").innerHTML=text.length;
+                document.getElementById("part2").innerHTML=text.slice(8,12);
+                document.getElementById("part3").innerHTML=text.toUpperCase();
+                document.getElementById("part4").innerHTML=text.toLowerCase();
+                let text1=text.trim();
+                document.getElementById("part5").innerHTML=text1;
+                document.getElementById("part6").innerHTML=text1.concat(7);
+            </script>
+        </body>
+    </head>
+</html>
+<html>
+    <head>
+        <body>
+            <h1>array methods</h1>
+            <h2>array length</h2>
+            <p id="part7"></p>
+            <h2>array push</h2>
+            <p id="part8"></p>
+            <P id="part9"></P>
+            <h2>array unshift</h2>
+            <p id="part10"></p>
+            <P id="part11"></P>
+            <h2>join</h2>
+            <p id="part12"></p>
+            <P id="part13"></P>
+            <h2>shift</h2>
+            <P id="part14"></P>
+            <P id="part15"></P>
+            <h2>pop</h2>
+            <P id="part16"></P>
+            <P id="part17"></P>
+            <h2>indexOf</h2>
+            <P id="part18"></P>
+            <P id="part19"></P>
+            <script>
+                let text2=[0,1,2,3];
+                document.getElementById("part7").innerHTML=text2.length;
+                "<br>"
+                let text3=["apple, orrange, grapes"];
+                document.getElementById("part8").innerHTML=text3;
+                text3.push("mango");
+                document.getElementById("part9").innerHTML=text3;
+                
+                document.getElementById("part10").innerHTML=text3;
+                text3.unshift("kiwi");
+                document.getElementById("part11").innerHTML=text3;
+
+                document.getElementById("part12").innerHTML=text3;
+                text3.splice(3,0,"banana","chery");   
+                document.getElementById("part13").innerHTML=text3;
+               
+                document.getElementById("part14").innerHTML=text3;
+                text3.pop(3,0,"plums");   
+                document.getElementById("part15").innerHTML=text3;
+               
+                document.getElementById("part16").innerHTML=text3;
+                text3.shift();   
+                document.getElementById("part17").innerHTML=text3;
+               
+                document.getElementById("part18").innerHTML=text3;
+                text3.indexOf("grapes");   
+                document.getElementById("part19").innerHTML=text3;
+               
+</script>
+        </body>
+    </head>
+</html>

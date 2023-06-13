@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>loop statement</title>
+    </head>
+        <body>
+            <p id="loop"></p>
+            <p id="while"></p>
+            <script>
+                let text=" ";
+                for(let i=0;i<10;i++){
+                    text += "the number is" + i +" <br>";
+                }
+                document.getElementById("loop").innerHTML=text;
+                "<br>"
+                let i=0;
+                text1=" ";
+                while (i<10) {
+                    text1 += i + "<br>";
+                    i++;
+                }
+                document.getElementById("while").innerHTML=text1;
+            </script>
+        </body>
+</html>
